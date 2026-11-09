@@ -16,4 +16,10 @@ main { max-width: 840px; margin: 0 auto; padding: 10px; }
 section { margin: 20px 0; }
 footer { background: #055a30; color: white; padding: 15px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
 footer nav a { margin-left: 5px; }
-footer nav img { width: 35px; height: 35px; }
+footer nav img { width: 35px; height: 35px; }@media (max-width: 700px) {
+  .hero h1 { position: static !important; background: #055a30 !important; }
+  .hero img { height: 280px !important; }
+  .hero article { position: static !important; margin: 0 !important; }
+  header { grid-template-columns: 80px 1fr !important; }
+  header img { width: 70px !important; }
+}
