@@ -26,3 +26,11 @@ footer nav img { width: 35px; height: 35px; }@media (max-width: 700px) {
   .hero img { height: 750px !important; }
   .hero article { font-size: 14px !important; }
 }
+@media (max-width: 700px) {
+  .hero h1 { position: static !important; background: #055a30 !important; font-size: 24px !important; }
+  .hero img { height: 300px !important; }
+  .hero article { position: static !important; background: white !important; font-size: 16px !important; }
+  .hero article img { width: 90px !important; }
+  footer nav img { width: 30px !important; height: 30px !important; }
+  body { font-size: 16px !important; }
+}
