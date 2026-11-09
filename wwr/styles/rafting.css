@@ -17,3 +17,7 @@ section { margin: 20px 0; }
 footer { background: #055a30; color: white; padding: 15px; display: flex; justify-content: space-between; align-items: center; }
 footer nav a { margin-left: 5px; }
 footer nav img { width: 35px; height: 35px; }
+@media (max-width: 600px) {
+  .hero article { position: static; }
+  .hero h1 { position: static; background: #055a30; }
+}
