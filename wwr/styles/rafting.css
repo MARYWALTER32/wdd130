@@ -4,7 +4,7 @@
 
 /* Step 4.9: Remove Underlines & Size Social Media Links in Footer */
 .socialmedia a {
-    text-decoration: none;
+    text-: none;
     color: var(--secondary-color);
 }
 
