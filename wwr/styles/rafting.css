@@ -1,49 +1,5 @@
-/* Step 4.3: Define CSS Variables */
-:root {
-    --primary-color: #004d61;
-    --secondary-color: #e07a5f;
-    --accent1-color: #333333;
-    --accent2-color: #f4f1de;
-    --heading-font: 'Georgia', serif;
-    --body-font: 'Arial', sans-serif;
-}
 
-/* Step 4.4: Reset Box-Model Properties */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-/* Step 4.5: Style Body Text Content */
-body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
-    background-color: var(--accent2-color);
-}
-
-/* Step 4.6: Limit Page Width and Center Content */
-header, main, footer {
-    width: 840px;
-    margin: 0 auto;
-}
-
-/* Header & Logo Sizing */
-header img {
-    width: 150px;
-    height: auto;
-}
-
-/* Step 4.7: Style Headings */
-h1, h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
-
-/* Step 4.8: Style Nav, Paragraphs, Sections, and Articles */
-nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
 }
 
 /* Step 4.9: Remove Underlines & Size Social Media Links in Footer */
@@ -98,3 +54,4 @@ nav, p, section, article {
     width: 125px;
     margin-left: 10px;
 }
+UB
