@@ -1,1 +1,286 @@
 
+:root {
+    --primary-color: #d9c8f5;
+    --secondary-color: #f4a261;
+    --accent1-color: #264969;
+    --accent2-color: #e9c46a;
+    --heading-font: Arial, sans-serif;
+    --body-font: Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: #222;
+    background-color: white;
+    line-height: 1.5;
+}
+
+main {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    text-align: center;
+    color: #111;
+}
+
+/* HEADER - CSS GRID */
+
+header {
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    align-items: center;
+    padding: 15px 30px;
+    border: 1px solid #555;
+}
+
+header .logo {
+    width: 100px;
+    height: 85px;
+    object-fit: contain;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav a {
+    color: #222;
+    background-color: white;
+    text-decoration: none;
+    border: 1px solid #777;
+    padding: 7px 18px;
+    text-align: center;
+}
+
+header nav a:hover {
+    background-color: #eee;
+}
+
+/* HERO SECTION */
+
+.hero {
+    position: relative;
+    height: 190px;
+    margin: 10px 0;
+    border: 1px solid #555;
+    overflow: hidden;
+}
+
+.hero .hero-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    inset: 0;
+    z-index: 0;
+}
+
+.hero h1 {
+    position: relative;
+    z-index: 1;
+    font-size: 22px;
+    padding: 7px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.hero article {
+    position: absolute;
+    z-index: 1;
+    left: 25px;
+    right: 25px;
+    bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #777;
+    padding: 12px 15px;
+    min-height: 85px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.hero article p {
+    flex: 1;
+    font-size: 13px;
+}
+
+.hero article img {
+    width: 45px;
+    height: 55px;
+    object-fit: cover;
+}
+
+/* HISTORY SECTION */
+
+.history {
+    background-color: #f5f3f3;
+    border: 1px solid #777;
+    padding: 8px 20px 15px;
+    margin: 10px 0;
+}
+
+.history h2 {
+    margin-bottom: 3px;
+    font-size: 20px;
+}
+
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 130px 1fr;
+    align-items: center;
+    gap: 15px;
+}
+
+.history-content p {
+    font-size: 12px;
+}
+
+.history-content img {
+    width: 130px;
+    height: 85px;
+    object-fit: cover;
+}
+
+/* ADVENTURES SECTION */
+
+.adventures {
+    background-color: #f5f3f3;
+    border: 1px solid #777;
+    padding: 8px 20px 12px;
+    margin: 10px 0;
+}
+
+.adventures h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.adventure-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    text-align: center;
+}
+
+.adventure-gallery figure {
+    margin: 0;
+}
+
+.adventure-gallery img {
+    width: 85px;
+    height: 75px;
+    object-fit: cover;
+}
+
+.adventure-gallery figcaption {
+    font-size: 12px;
+    padding-top: 2px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--primary-color);
+    border: 1px solid #777;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 10px;
+    max-width: 840px;
+    margin: 10px auto;
+}
+
+footer p {
+    text-align: center;
+    font-size: 12px;
+}
+
+footer .socialmedia {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+}
+
+footer .socialmedia img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+/* MOBILE RESPONSIVE DESIGN */
+
+@media screen and (max-width: 600px) {
+
+    header {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    header nav {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    header nav a {
+        padding: 7px 10px;
+    }
+
+    .hero {
+        height: 260px;
+    }
+
+    .hero article {
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        padding: 10px;
+    }
+
+    .hero article p {
+        font-size: 12px;
+    }
+
+    .history-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .history-content img {
+        margin: 0 auto;
+    }
+
+    .adventure-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .adventure-gallery img {
+        width: 100%;
+        height: 120px;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    footer .socialmedia {
+        justify-content: center;
+    }
+}
